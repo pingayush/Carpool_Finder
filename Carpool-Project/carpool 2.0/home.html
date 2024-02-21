@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home file</title>
+    <link href="home_old.html">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="stylesheet" href="home_phone.css" media="screen and (max-width:1310px)"> -->
+    <style></style>
+</head>
+
+<body>
+    <!-- ************************************************************************** -->
+    <!-- forst give nav bar with about s and contact us and image -->
+    <!-- about usscrolls down to about us section -->
+    <!-- conatct us will open a chat box-using java script -->
+
+    <div class="navbar">
+
+        <!-- apply animation to image -->
+        <div id="img1">
+            <img src="auto_car-16.jpg" alt="car">
+        </div>
+
+        <ul>
+            <li> <a href="#about_us_section" id="abt_us"> About Us</a></li>
+            <li><button id="btn" onclick="show_chatbox()">Chat With Us</li></button>
+        </ul>
+
+        <div id="chatbox">
+            Facing Any Querry?
+            <br><br>
+            Chat With Us-<br>
+            <div id="sid_id">
+                Siddhant Agrawal<br>
+                +91 1234567890
+            </div>
+        </div>
+    </div>
+    <!-- ************************************************************************** -->
+
+    <!-- no give 2 containers:1st:align right-"GAADIWALA" -->
+    <!--                     :2nd:align left-"steps"-step-1 and 2 -->
+
+    <div class="main_container">
+        <!-- <div id="left_container"> -->
+        <div id="gaadiwala">
+            <div id="gaadi_text" data-text="GaADI
+                WaLa...">GaADI <br>
+                WaLa...
+            </div>
+        </div>
+
+        <div id="basic_instruction">
+            <ul>
+                <li id="step1"><u>Step-I:</u> If you are a new user, <br>
+                    then get
+                    yourself registered by adding your info in "NEW USERS BOX".
+                </li>
+                <br>
+                <li id="step2"> <u> Step-II:</u> If you are an old user,<br> then
+                    get yourself registered by adding your info in "OLD USERS
+                    BOX". </li>
+            </ul>
+            <!-- <div id="gettingstartedbtn"> -->
+            <button id="btn_get_started"> <a href="#box_new"> Get Started</a></button>
+            <!-- </div> -->
+        </div>
+    </div>
+    <hr>
+    <!-- ************************************************************************** -->
+    <section>
+        <!-- now give box-new user -->
+        <div class="box" id="box_new">
+            <div class="card">
+                <h2>Enter the details-FOR NEW USERS ONLY</h2>
+                <form method="POST" action="">
+                    <div class="content">
+                        Registration No. : <input class="form-buts" type="text" placeholder="Enter registration no."
+                            pattern="[0-9]{2}[a-z,A-Z]{3}[0-9]{4}" id="reg_no" maxlength="9" required name="reg_no"
+                            oninput="this.value = this.value.toUpperCase()">
+                        <br>
+
+                        Name : <input class="form-buts" type="text" placeholder="Enter Name" id="name" name="name"><br>
+
+                        Date : <input class="form-buts" type="date" placeholder="Enter the date" required
+                            name="date"><br>
+
+                        Phone No. : <input class="form-buts" type="tel" id="phone" placeholder="Enter phone no."
+                            pattern="[0-9]{10}" maxlength="10" required name="phone"><br>
+
+                        <!-- eligibility: <input type="checkbox" name="my checkbox"> -->
+
+                        Time : <input class="form-buts" type="time" placeholder="enter the time" required
+                            name="time"><br>
+
+                        Destination :
+                        <select class="place" placeholder="enter the Destination" id="destination" name="destination">
+                            <option value="select destination" selected disabled>Select Destination</option>
+                            <option value="Chennai Railway Station">Chennai Railway Station </option>
+                            <option value="Chennai Airport">Chennai Airport</option>
+                        </select><br>
+
+                        <input class="sub" type="submit" value="Submit now" onclick="show_alert();">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- now give box-old user link-->
+        <div id="ask_if_old">
+            <div class="card2">
+                <h2>If you are an OLD USER:</h2>
+                <a href="home_old.html" target="_blank">
+                    Click here to find your buddy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <!-- ************************************************************************** -->
+
+    <!-- about us section-->
+    <section id="about_us_section">
+        <center>
+            <h2 id="heading_abt">About Us</h2>
+        </center>
+        <!-- <br> -->
+        <div id="abt_another_div">
+
+            <div class="abt_boxes">
+                <h3>Anushka Tonk</h3>
+                <center>
+                    <p class="us_info">
+                        Developed Front-end of the Website<br>
+                        21BAI1761 <br>
+                        CSE AI and ML <br>
+                        <a href="#" target="_blank"><img id="linkedin" src="linked.jpg" alt="#linkedin"></a>
+                        <a href="#" target="_blank"><img id="github" src="github.jpg" alt="#github"></a>
+                    </p>
+                </center>
+            </div>
+
+            <div class="abt_boxes">
+                <h3>Siddhant Agrawal</h3>
+                <center>
+                    <p class="us_info">
+                        Developed Back-end of the website<br>
+                        21BAI1760 <br>
+                        CSE AI and ML <br>
+                        <a href="#" target="_blank"><img id="linkedin" src="linked.jpg" alt="#linkedin"></a>
+                        <a href="#" target="_blank"><img id="github" src="github.jpg" alt="#github"></a>
+                    </p>
+                </center>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        CopyRight All Rights Reserved
+    </footer>
+    <!-- ************************************************************************** -->
+    <!-- ************************************************************************** -->
+    <!-- ************************************************************************** -->
+
+
+    <!-- put all the script tage here -->
+    <script>
+        function show_chatbox() {
+            let btn = document.getElementById('btn');
+            let chatbox = document.getElementById('chatbox');
+            if (chatbox.style.display != "none") {
+                chatbox.style.display = "none";
+            }
+            else {
+                chatbox.style.display = "block";
+            }
+        }
+
+        function show_alert() {
+            alert("Your data has been Submitted");
+        }
+    </script>
+    <!-- ************************************************************************** -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>

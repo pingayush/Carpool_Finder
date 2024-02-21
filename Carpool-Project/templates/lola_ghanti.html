@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        header::before {
+            content: "";
+            background-image: url('https://source.unsplash.com/collection/190727/1600x900');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 70%;
+        }
+
+        body {
+            background-color: black;
+            /* background-image: url(); */
+            color: white;
+            font-size: 21px;
+            /* text-align: center; */
+            /* justify-content: center; */
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+            color: white;
+            margin: auto;
+        }
+
+        .navbar ul {
+            /* font-size: large; */
+            list-style: none;
+            display: flex;
+            margin: auto;
+            padding: 21px 51px;
+            align-content: center;
+        }
+
+        .navbar ul li {
+            font-size: 23px;
+            display: flex;
+            margin: 12px 12px;
+            padding: 16px 7px;
+            align-content: center;
+        }
+
+        .navbar ul li:hover {
+            border: 2px solid aqua;
+            color: tomato;
+            text-decoration: underline;
+        }
+
+        .chat-box {
+            background-color: black;
+            /* display: flex; */
+            border: 2px solid red;
+            height: 180px;
+            width: 300px;
+            left: 75%;
+            margin: auto;
+            position: fixed;
+            padding: 12px 12px;
+            /* text-align: center; */
+        }
+        .input-box{
+            height: 120px;
+            width: 150px;
+            margin-top: 23px;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: 97px 50px;
+            height: 584px;
+            width: 508px;
+            padding: 20px 39px;
+            background-image: url(pexels-photo-841130.jpeg);
+
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        .form-buts {
+            /* box-sizing: border-box; */
+            font-size: 21px;
+            /* text-align: center; */
+            display: inline-block;
+            width: 292px;
+            padding: 7px;
+            border: 2px solid black;
+            margin: 13px auto;
+            border-radius: 4px;
+        }
+
+        .content {
+            text-align: right;
+        }
+
+        .place {
+            height: 35px;
+            width: 308px;
+            text-align: left;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: larger;
+        }
+
+        .sub {
+            width: 201px;
+            height: 38px;
+            margin: 17px 105px;
+            padding: 10px;
+        }
+
+        p {
+            display: flex;
+            color: bisque;
+            font-weight: 500;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        section ul {
+            display: flex;
+            /* font-size: large; */
+            list-style: none;
+            display: flex;
+            margin: auto;
+            padding: 21px 51px;
+            align-content: center;
+        }
+
+        section ul li {
+            display: flex;
+            /* border: 2px solid aqua; */
+            padding: 23px 34px;
+            margin: 23px 23px;
+            box-shadow: 14px 14px aqua;
+        }
+
+        section ul li:hover {
+            display: flex;
+            color: tomato;
+            border: 2px solid aqua;
+        }
+
+        span {
+            /* display: block; */
+            /* text-align: center; */
+            font-size: 23px;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="chat-box">
+            Facing Any Querry?
+            <br>
+            Chat With Us-<input class="input-box" type="text" placeholder="enter the text here" name="chat" maxlength="100">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Search Trains</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section>
+
+        <div class="box">
+            <h2>Enter the details</h2>
+            <form method="POST" action="">
+                <div class="content">
+                    Registration No. : <input class="form-buts" type="text" placeholder="Enter registration no."
+                        pattern="[0-9]{2}[a-z,A-Z]{3}[0-9]{4}" id="reg_no" maxlength="9" required autofocus name="reg_no"> <br>
+                    Name : <input class="form-buts" type="text" placeholder="Enter Name" id="name" name="name"><br>
+                    Date : <input class="form-buts" type="date" placeholder="Enter the date" required id="date" name="date"><br>
+                    Phone No. : <input class="form-buts" type="tel" id="phone" placeholder="Enter phone no."
+                        pattern="[0-9]{10}" maxlength="10" required name="phone"><br>
+                    <!-- eligibility: <input type="checkbox" name="my checkbox"> -->
+                    Time : <input class="form-buts" type="time" placeholder="enter the time" required id="time" name="time"><br>
+                    Destination :
+                    <select class="place" placeholder="enter the Destination" id="destination" name="destination">
+                        <option value="select destination" selected disabled>Select Destination</option>
+                        <option value="Chennai Railway Station">Chennai Railway Station </option>
+                        <option value="Chennai Airport">Chennai Airport</option>
+                    </select><br>
+                    <input class="sub" type="submit" value="Submit now">
+                </div>
+            </form>
+
+        </div>
+
+        <ul>
+            <li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem vero architecto cumque sit
+                    doloremque, accusantium id, expedita ratione sed debitis, nesciunt laudantium aliquam nisi itaque
+                    molestiae
+                    enim? Quaerat corporis quod unde facere nisi?
+
+                </p>
+            </li>
+            <li>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum sunt, corporis modi, officiis
+                    harum
+                    expedita non earum sequi laudantium illum velit, maiores ullam! Recusandae illo quod porro quis vero
+                    perferendis fugiat veniam eos?
+                </p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet corrupti explicabo doloremque pariatur
+                    nisi
+                    neque soluta nesciunt omnis dolor, qui totam? Id maxime quas voluptatem ipsum corrupti iste, iusto
+                    ea sequi
+                    impedit assumenda, provident totam. .</p>
+        </ul>
+        </li>
+
+        <center>
+            <span>
+                Contact-<br>
+                Anushka Tonk<br>
+                H/no.- 118, Shakti Nagar, New Delhi(240001), Delhi, INDIA
+            </span>
+        </center>
+
+
+    </section>
+
+
+</body>
+
+</html>
